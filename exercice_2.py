@@ -10,12 +10,16 @@ def calculate(string):
     for i in range(len(string)):
         if (isinstance(string[i], int) or len(string) == 1):
             print("False")
-            exit (84)
+            exit(84)
         else:
             value.append(string[i])
+    for i in range(len(value)):
+        if (value[i] <= '0' or value[i] >= '9'):
+            print("False")
+            exit(84)
     result = 0
     for i in range(len(string)):
         result += int(string[i])
     print(result)
 
-calculate(['1', '1', '2'])
+calculate(['nothing', '1', '2'])
