@@ -6,11 +6,11 @@
 ##
 
 def anagrams(word, string):
-    result = []
-    for i in range(len(string)):
-        if (len(word) == len(string[i])):
-            result.append(string[i])
-    for i in range(len(result)):
-        for j in range(len(len(word)))
+    value = []
 
-anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada'])
+    for string in string:
+        if sorted(string) == sorted(word):
+            value.append(string)
+    print(value)
+
+anagrams('laser', ['lazing', 'lazy',  'lacer'])
