@@ -13,8 +13,8 @@ def calculate(string):
             exit (84)
         else:
             value.append(string[i])
-    result = int(value[0]) + int(value[1])
-    for i in range(2, len(string)):
+    result = 0
+    for i in range(len(string)):
         result += int(string[i])
     print(result)
 
